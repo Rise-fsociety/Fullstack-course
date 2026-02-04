@@ -1,6 +1,7 @@
 import Content from "@/components/Content";
 import Header from "./../../components/Header";
 import Total from "@/components/Total";
+import Counter from "@/components/Counter";
 
 const page = () => {
   const course = "half stack development";
@@ -12,6 +13,10 @@ const page = () => {
       <Header course={course} />
       <Content data={[part1, part2, part3]} />
       <Total data={{part1, part2, part3}} />
+      <br />
+
+
+      <Counter />
     </>
   );
 };
